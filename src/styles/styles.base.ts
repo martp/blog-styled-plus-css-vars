@@ -25,5 +25,8 @@ export const base = {
         md: `15px`,
         lg: `30px`,
         xl: `45px`
+    },
+    borders: {
+        radius: '10px'
     }
 };
