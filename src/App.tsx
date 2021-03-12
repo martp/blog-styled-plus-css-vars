@@ -1,25 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import styled from "styled-components";
+import { base } from "./styles/styles.base";
+import { Title, Text } from "./styles/components.base";
+import { Fill } from "./styles/components.layout";
+
+const DarkMode = styled.div`
+  display: none;
+  @media ${base.media.colorScheme.dark} {
+    display: block;
+  }
+`;
+
+const LightMode = styled.div`
+  display: block;
+  @media ${base.media.colorScheme.dark} {
+    display: none;
+  }
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fill>
+      <section>
+        <Title>
+          <DarkMode>Dark Mode</DarkMode>
+          <LightMode>Light Mode</LightMode>
+        </Title>
+        <Text>Toggle Light/Dark Mode in your OS</Text>
+      </section>
+    </Fill>
   );
 }
 
