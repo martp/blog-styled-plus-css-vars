@@ -1,7 +1,7 @@
 # Dynamic Dark Mode Support 
 ## Using CSS Variables + styled-components
 
-A quick demo of how you could use CSS Variables in styled-components themes, to achieve auto light/dark mode. That is a light/dark mode that mirrors the host OS.
+A quick demo of how to combine CSS Variables + styled-components Themes to achieve an automatic light/dark mode that mirrors the host OS.
 
 Live Demo: [here](http://martp.github.io/blog-styled-plus-css-vars)
 
@@ -9,7 +9,6 @@ Live Demo: [here](http://martp.github.io/blog-styled-plus-css-vars)
 * [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
 
 ## Get Started
-
 
 
 ```
