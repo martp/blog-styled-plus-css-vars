@@ -45,7 +45,7 @@ const Label = styled.label`
     }
 `;
 
-export interface FancyRadioProps {
+export interface RadioProps {
     name: string,
     label: string,
     value: string,
@@ -55,7 +55,7 @@ export interface FancyRadioProps {
     onChange: (event: ChangeEvent) => void
 }
 
-export const Radio = (props: FancyRadioProps) => {
+export const Radio = (props: RadioProps) => {
     const { autoFocus, background, checked, name, label, value, onChange } = props;
     return (
         <Label>
